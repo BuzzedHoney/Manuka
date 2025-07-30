@@ -1,5 +1,5 @@
 # Manuka
-Manuka is a streamlined Windows debloater designed with simplicity in mind, offering an optimal balance between optimization, privacy, and security.
+Manuka is a streamlined Windows debloater designed with simplicity in mind, offering an optimal balance between optimization, security, and privacy.
 
 # Features
 I'll add these later when I feel like it.
