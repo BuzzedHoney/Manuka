@@ -4,7 +4,7 @@ Manuka is a streamlined Windows debloater designed with simplicity in mind, offe
 > By using this executable, you acknowledge and agree to the terms and conditions outlined in the [license](https://raw.githubusercontent.com/BuzzedHoney/Manuka/main/LICENSE).
 
 > [!WARNING]
-> This app was specifically created for Windows 11 Pro systems, and has minimal testing on other system versions, so it's not guaranteed to function exactly as listed. 
+> This app was specifically created for Windows 11 Pro systems, and has minimal testing on other system versions, so it's not guaranteed to function exactly as listed if ran on another version.
 
 # Features
 ### Optimization
