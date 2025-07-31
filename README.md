@@ -3,11 +3,11 @@ Manuka is a streamlined Windows debloater designed with simplicity in mind, offe
 
 # Features
 ### Optimization
-- Removes unnecessary backgrounds processes, and bloatware like Edge, Outlook, OneDrive, and along with many more to free up system resources and storage, while also applying a large variety of optimization tweaks to improve overall system performance, and responsiveness.
+- Removes unnecessary backgrounds processes, and bloatware like Edge, Outlook, OneDrive, and much more to free up system resources and storage, while also applying a large variety of optimization tweaks to improve overall system performance, and responsiveness.
 ### Security
 - Enhances built in Windows defenses by enabling and configuring Windows Defender and Firewall for maximum real time protection and network security against the latest collection of malware, exploits, and network threats.
 ### Privacy
-- Manuka stops Microsoft’s surveillance. Telemetry, Recall, Copilot, ads, web suggestions, and other invasive features are disabled. A wide range of known tracking domains are blocked at the firewall level, and services tied to Bing, Edge, and Microsoft analytics are blocked.
+- Stops Microsoft’s surveillance by disabling Telemetry, Recall, Copilot, ads, web suggestions, and other invasive features. A wide range of known tracking domains are blocked at the firewall level, and services tied to Bing, Edge, and Microsoft analytics are blocked.
 
 # Installation
 The installation process is very simple, just download the latest executable via the release tab and run it. The app applies all the optimizations for you automatically and closes itself when finished. Although I have tested my software a dozen times, I still recomend creating a restore point before running just on the off chance that something system breaking occurs. If any problems arise from using my application please don't hesitate to let me know via the issues tab. 
