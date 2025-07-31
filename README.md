@@ -1,5 +1,7 @@
 # Manuka
 Manuka is a streamlined Windows debloater designed with simplicity in mind, offering an optimal balance between optimization, security, and privacy.
+> [!NOTE]
+> By using this executable you're acknlowedging and agreeing to the [license](https://raw.githubusercontent.com/BuzzedHoney/Manuka/main/LICENSE)'s terms and conditions.
 
 # Features
 ### Optimization
