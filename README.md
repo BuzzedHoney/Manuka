@@ -3,7 +3,7 @@ Manuka is a streamlined Windows debloater designed with simplicity in mind, offe
 
 # Features
 ### Optimization
-- Removes unnecessary backgrounds processes, and bloatware like Edge, Outlook, and OneDrive along with many more to free up system resources and storage, while also applying a large variety of optimization tweaks to improve overall system performance, and responsiveness.
+- Removes unnecessary backgrounds processes, and bloatware like Edge, Outlook, OneDrive, and along with many more to free up system resources and storage, while also applying a large variety of optimization tweaks to improve overall system performance, and responsiveness.
 ### Security
 - Enhances built in Windows defenses by enabling and configuring Windows Defender and Firewall for maximum real time protection and network security against the latest collection of malware, exploits, and network threats.
 ### Privacy
