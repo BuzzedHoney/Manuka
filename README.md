@@ -1,7 +1,10 @@
 # Manuka
 Manuka is a streamlined Windows debloater designed with simplicity in mind, offering an optimal balance between optimization, security, and privacy.
 > [!NOTE]
-> By using this executable you're acknlowedging and agreeing to the [license](https://raw.githubusercontent.com/BuzzedHoney/Manuka/main/LICENSE)'s terms and conditions.
+> By using this executable, you acknowledge and agree to the terms and conditions outlined in the [license](https://raw.githubusercontent.com/BuzzedHoney/Manuka/main/LICENSE).
+
+> [!WARNING]
+> This app was specifically created for Windows 11 Pro systems, and has minimal testing on other system versions, so it's not guaranteed to function exactly as listed. 
 
 # Features
 ### Optimization
@@ -22,3 +25,6 @@ The installation process is very simple, just download the latest executable via
 <img width="389" height="61" alt="image" src="https://github.com/user-attachments/assets/efa1c7f1-8351-4b6a-94b0-6901a6b1e616" />
 
 I'd say so *(obviously)*, but feel free to use a tool like [dnSpy](https://github.com/dnSpy/dnSpy) to decompile my app if you really don't trust it — nothing’s obfuscated.
+
+---
+**Credit to the [Raven Dev Team](https://ravendevteam.org/) team for heavy inspiration from their project [Talon](https://github.com/ravendevteam/talon).**
