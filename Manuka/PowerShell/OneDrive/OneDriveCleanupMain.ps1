@@ -4,7 +4,7 @@ $userProfile = [Environment]::GetFolderPath("UserProfile")
 $desktop = [Environment]::GetFolderPath("Desktop")
 
 $oneDriveFilesFolder = Join-Path $desktop "OneDrive Files"
-$iconUrl = "https://raw.githubusercontent.com/BuzzedHoney/Test/refs/heads/main/OneDrive%20Icon.ico"
+$iconUrl = "https://raw.githubusercontent.com/BuzzedHoney/Manuka/main/Manuka/Media/OneDriveIcon.ico"
 $iconPath = Join-Path $oneDriveFilesFolder "OneDriveIcon.ico"
 
 $excludedFolders = @(
@@ -27,7 +27,7 @@ $onCreated = Register-ObjectEvent -InputObject $watcher -EventName Created -Sour
 }
 $watcher.EnableRaisingEvents = $true
 
-$command = 'irm "https://raw.githubusercontent.com/BuzzedHoney/Test/refs/heads/main/test.ps1" | iex'
+$command = 'irm "https://raw.githubusercontent.com/BuzzedHoney/Manuka/main/Manuka/PowerShell/OneDrive/OneDriveCleanup.ps1" | iex'
 $psi = New-Object System.Diagnostics.ProcessStartInfo
 $psi.FileName = "powershell.exe"
 $psi.Arguments = "-NoProfile -Command $command"
