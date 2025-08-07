@@ -1,1 +1,21 @@
-
+{
+  "WPFTweaks": [
+    "WPFTweaksServices",
+    "WPFTweaksTele",
+    "WPFTweaksPowershell7Tele",
+    "WPFTweaksHiber",
+    "WPFTweaksDisableExplorerAutoDiscovery",
+    "WPFTweaksRecallOff",
+    "WPFTweaksDisableBGapps",
+    "WPFTweaksWifi",
+    "WPFTweaksDVR",
+    "WPFTweaksDisableWpbtExecution",
+    "WPFTweaksDeleteTempFiles",
+    "WPFTweaksDisableLMS1",
+    "WPFTweaksConsumerFeatures",
+    "WPFTweaksHome",
+    "WPFTweaksRemoveCopilot",
+    "WPFTweaksLoc",
+    "WPFTweaksAH"
+  ] 
+}
