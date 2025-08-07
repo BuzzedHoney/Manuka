@@ -41,7 +41,8 @@ while (-not $readerOut.EndOfStream -or -not $readerErr.EndOfStream) {
             -DisableNotepadAI `
             -DisablePaintAI `
             -DisableRecall `
-            -DisableDVR
+            -DisableDVR `
+            -DisableSuggestions `
             -DisableSuggestions `
             -DisableLockscreenTips `
             -DisableDesktopSpotlight `
