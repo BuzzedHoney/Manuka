@@ -43,7 +43,6 @@ while (-not $readerOut.EndOfStream -or -not $readerErr.EndOfStream) {
             -DisableRecall `
             -DisableDVR `
             -DisableSuggestions `
-            -DisableSuggestions `
             -DisableLockscreenTips `
             -DisableDesktopSpotlight `
             -DisableWidgets `
