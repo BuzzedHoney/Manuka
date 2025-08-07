@@ -36,16 +36,19 @@ while (-not $readerOut.EndOfStream -or -not $readerErr.EndOfStream) {
             -RemoveAppsCustom `
             -DisableTelemetry `
             -DisableSettings365Ads `
+            -DisableBing `
+            -DisableCopilot `
+            -DisableNotepadAI `
+            -DisablePaintAI `
+            -DisableRecall `
+            -DisableDVR
             -DisableSuggestions `
             -DisableLockscreenTips `
             -DisableDesktopSpotlight `
             -DisableWidgets `
             -DisableFastStartup `
             -DisableStickyKeys `
-            -DisableCopilot `
-            -DisableMouseAcceleration `
-            -DisableRecall `
-            -DisableBing
+            -DisableMouseAcceleration
 
             Start-Sleep -Seconds 3
             
