@@ -10,7 +10,7 @@ $iconPath = Join-Path $oneDriveFilesFolder "OneDriveIcon.ico"
 $excludedFolders = @(
     "AppData", "Desktop", "Documents", "Downloads", "Music",
     "Pictures", "Videos", "Favorites", "Links", "Saved Games",
-    "Searches", "Contacts", "3D Objects", "source"
+    "Searches", "Contacts", "3D Objects", "source" # If theres anymore folders you'd like to be excluded create an issue and let me know.
 )
 
 $collectedFiles = @{}
