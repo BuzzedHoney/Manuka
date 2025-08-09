@@ -1,5 +1,4 @@
 try {
-
     Write-Host "Blocking Spying Domains"
     Start-Sleep -Seconds 3
     $domains = @(
