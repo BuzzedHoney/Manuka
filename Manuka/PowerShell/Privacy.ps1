@@ -1,10 +1,11 @@
 try {
+
     Write-Host "Blocking Spying Domains"
     Start-Sleep -Seconds 3
     $domains = @(
     # Bing
-    "www.bing.com",
     "bing.com",
+    "www.bing.com",
     "business.bing.com",
     "c.bing.com",
     "th.bing.com",
@@ -24,6 +25,7 @@ try {
     "staticview.msn.com",
     # Microsoft Edge
     "msedge.net",
+    "www.msedge.net",
     "a-ring-fallback.msedge.net",
     "c-ring.msedge.net",
     "dual-s-ring.msedge.net",
