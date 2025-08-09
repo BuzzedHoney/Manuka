@@ -15,6 +15,41 @@ while (-not $readerOut.EndOfStream -or -not $readerErr.EndOfStream) {
         $line = $readerOut.ReadLine()
         Write-Output $line
 
+$hiddenCount = 0
+$stopLoop = $false
+
+while (-not $stopLoop) {
+Add-Type @"
+using System;
+using System.Runtime.InteropServices;
+
+public class Win32 {
+    [DllImport("user32.dll")]
+    public static extern bool ShowWindowAsync(IntPtr hWnd, int nCmdShow);
+
+    [DllImport("user32.dll")]
+    public static extern bool IsWindowVisible(IntPtr hWnd);
+
+    [DllImport("user32.dll")]
+    public static extern int GetWindowText(IntPtr hWnd, System.Text.StringBuilder text, int maxLength);
+}
+"@
+
+    $psProcesses = Get-Process | Where-Object {
+        $_.ProcessName -match '^powershell(|_ise|\.exe)?$' -or $_.ProcessName -match '^pwsh$'
+    }
+    foreach ($proc in $psProcesses) {
+        if ($proc.MainWindowHandle -ne 0) {
+            [Win32]::ShowWindowAsync($proc.MainWindowHandle, 0)
+            $hiddenCount++
+        }
+    }
+
+    if ($hiddenCount -ge 1) {
+        $stopLoop = $true
+    }
+}
+
         if ($line -match "Tweaks are Finished") {
             $apps = Get-Process | Where-Object { $_.MainWindowTitle }
             foreach ($app in $apps) {
