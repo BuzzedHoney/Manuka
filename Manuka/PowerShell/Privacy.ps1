@@ -3,6 +3,7 @@ try {
     Start-Sleep -Seconds 3
     $domains = @(
     # Bing
+    "www.bing.com",
     "bing.com",
     "business.bing.com",
     "c.bing.com",
