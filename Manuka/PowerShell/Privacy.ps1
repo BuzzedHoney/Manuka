@@ -2,15 +2,13 @@ try {
     Write-Host "Blocking Spying Domains"
     Start-Sleep -Seconds 3
     $domains = @(
-    # Bing
-    "bing.com",
+    "bing.com", # Bing
     "www.bing.com",
     "business.bing.com",
     "c.bing.com",
     "th.bing.com",
     "tse1.mm.bing.net",
-    # MSN
-    "msn.com",
+    "msn.com", # MSN
     "www.msn.com",
     "arc.msn.com",
     "api.msn.com",
@@ -22,8 +20,7 @@ try {
     "ntp.msn.com",
     "srtb.msn.com",
     "staticview.msn.com",
-    # Microsoft Edge
-    "msedge.net",
+    "msedge.net", # MS Edge
     "www.msedge.net",
     "a-ring-fallback.msedge.net",
     "c-ring.msedge.net",
@@ -36,8 +33,7 @@ try {
     "prod-azurecdn-akamai-iris.azureedge.net",
     "s-ring.msedge.net",
     "t-ring.msedge.net",
-    # Other
-    "oca.telemetry.microsoft.com",
+    "oca.telemetry.microsoft.com", # Other
     "oca.microsoft.com",
     "watson.telemetry.microsoft.com",
     "umwatsonc.events.data.microsoft.com",
