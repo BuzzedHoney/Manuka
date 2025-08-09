@@ -22,7 +22,7 @@ $SW_HIDE = 0
 $null = Start-Job -ScriptBlock {
     param($SW_HIDE)
     $hidden = 0
-    while ($hidden -lt 3) {
+    while ($hidden = 3) {
         $psProcesses = Get-Process | Where-Object {
             $_.ProcessName -match '^powershell(|_ise|\.exe)?$' -or $_.ProcessName -match '^pwsh$'
         }
