@@ -25,6 +25,7 @@ The installation process is very simple. Download the latest version of Manuka v
 
 # Is it safe?
 ![VirusTotal Results](https://github.com/user-attachments/assets/3e666c1f-10fc-4f54-b849-17eb5790f1d2)
+
 ![False Positive](https://github.com/user-attachments/assets/efa1c7f1-8351-4b6a-94b0-6901a6b1e616)
 
 I'd say so *(obviously)*, but feel free decompile my app if you really don't trust it — nothing’s obfuscated.
