@@ -82,17 +82,12 @@ while ($true) {
                 -DisableMouseAcceleration
 
             Start-Sleep 3
+			
             irm "https://raw.githubusercontent.com/BuzzedHoney/Manuka/main/Manuka/PowerShell/Security.ps1" | iex
-			Start-Sleep 3
-			Write-Host "Final Message"
-   			Start-Sleep 5
-			Write-Host "Silly Face"
    
 	        Get-Process PowerShell | Stop-Process -Force
-
         }
     }
-
     while (-not $readerErr.EndOfStream) {
         $errLine = $readerErr.ReadLine()
         Write-Output $errLine
