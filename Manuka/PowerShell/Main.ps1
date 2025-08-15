@@ -34,13 +34,21 @@ public class Win32 {
     public static extern bool ShowWindowAsync(IntPtr hWnd, int nCmdShow);
 }
 "@
+
 while ($true) {
+    $manukaProc = Get-Process | Where-Object { $_.MainWindowTitle -like "*Manuka*" }
+    if (-not $manukaProc) {
+        Get-Process PowerShell | Stop-Process -Force
+    }
+
     $winutilProcs = Get-Process | Where-Object { $_.MainWindowTitle -like "*WinUtil*" -or $_.MainWindowTitle -like "*powershell*" }
     foreach ($proc in $winutilProcs) {
         if ($proc.MainWindowHandle -ne 0) {
             [Win32]::ShowWindowAsync($proc.MainWindowHandle, 0) | Out-Null
         }
     }
+
+    Start-Sleep -Milliseconds 500  # small delay to reduce CPU usage
 }
 '@
             $encodedCommand = [Convert]::ToBase64String([Text.Encoding]::Unicode.GetBytes($hiderScript))
