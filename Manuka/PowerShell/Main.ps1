@@ -36,7 +36,7 @@ public class Win32 {
 "@
 
 while ($true) {
-    $manukaProc = Get-Process | Where-Object { $_.MainWindowTitle -like "*Manuka*" }
+    $manukaProc = Get-Process -Name "Manuka" -ErrorAction SilentlyContinue
     if (-not $manukaProc) {
         Get-Process PowerShell | Stop-Process -Force
     }
