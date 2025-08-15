@@ -1,11 +1,11 @@
 $winutil_content = irm "https://christitus.com/win"
 
 $feature_pattern = '(?ms)^\s*Write-Host "Installing features\.\.\."\s*.*?Write-Host "Done\."'
-$patched_content = [regex]::Replace($winutil_content, $feature_pattern, '')
+$modded_content = [regex]::Replace($winutil_content, $feature_pattern, '')
 
 $winutil_path = "$env:TEMP\Manuka\Modded_WinUtil.ps1"
 New-Item -ItemType Directory -Force -Path (Split-Path $winutil_path) | Out-Null
-Set-Content -Path $winutil_path -Value $patched_content -Encoding UTF8
+Set-Content -Path $winutil_path -Value $modded_content -Encoding UTF8
 
 $psi = New-Object System.Diagnostics.ProcessStartInfo
 $psi.FileName = "powershell.exe"
