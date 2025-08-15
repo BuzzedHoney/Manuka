@@ -56,7 +56,7 @@ while ($true) {
             }
 
             irm "https://raw.githubusercontent.com/BuzzedHoney/Manuka/main/Manuka/PowerShell/Debloat.ps1" | iex
-            Start-Sleep -Seconds 3
+            Start-Sleep 3
 
             New-Item -ItemType Directory -Force -Path "$env:LOCALAPPDATA\Temp\Win11Debloat" | Out-Null
             Invoke-RestMethod 'https://raw.githubusercontent.com/BuzzedHoney/Manuka/main/Manuka/Configs/CustomAppsList' |
@@ -81,10 +81,13 @@ while ($true) {
                 -DisableStickyKeys `
                 -DisableMouseAcceleration
 
-            Start-Sleep -Seconds 3
-
+            Start-Sleep 3
             irm "https://raw.githubusercontent.com/BuzzedHoney/Manuka/main/Manuka/PowerShell/Security.ps1" | iex
-
+			Start-Sleep 3
+			Write-Host "Final Message"
+   			Start-Sleep 3
+			Write-Host "Silly Face"
+   
 	        Get-Process PowerShell | Stop-Process -Force
 
         }
