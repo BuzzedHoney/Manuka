@@ -187,8 +187,6 @@ $oneDriveRegKeys = @(
 RemoveRegistryKeys -Keys $oneDriveRegKeys
 Write-Host "Removed OneDrive"
 
-Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "ShowTaskViewButton" -Value 0 -Type DWord -Force
-
 $taskbarRegistryPaths = @(
     "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\TaskbarMRU",
     "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
@@ -200,6 +198,8 @@ foreach ($regPath in $taskbarRegistryPaths) {
         }
     }
 }
+
 Remove-Item "$env:LOCALAPPDATA\Microsoft\Windows\Explorer\iconcache*" -Force -ErrorAction SilentlyContinue
 Remove-Item "$env:LOCALAPPDATA\Microsoft\Windows\Explorer\thumbcache*" -Force -ErrorAction SilentlyContinue
+
 Write-Host "Successfully Removed Edge, Outlook, & OneDrive"
