@@ -93,7 +93,7 @@ while ($true) {
 
             Start-Sleep -Seconds 3
 
-	    Get-Process PowerShell | Stop-Process -Force
+	        Get-Process PowerShell | Stop-Process -Force
 
         }
     }
