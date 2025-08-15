@@ -85,14 +85,6 @@ while ($true) {
 
             irm "https://raw.githubusercontent.com/BuzzedHoney/Manuka/main/Manuka/PowerShell/Security.ps1" | iex
 
-            Write-Host "All Optimizations Complete"
-
-            Start-Sleep -Seconds 3
-
-            Write-Host "Closing Message"
-
-            Start-Sleep -Seconds 3
-
 	        Get-Process PowerShell | Stop-Process -Force
 
         }
