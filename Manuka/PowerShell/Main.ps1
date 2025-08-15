@@ -55,10 +55,6 @@ while (-not $readerOut.EndOfStream -or -not $readerErr.EndOfStream) {
             irm "https://raw.githubusercontent.com/BuzzedHoney/Manuka/main/Manuka/PowerShell/Security.ps1" | iex
 
             Start-Sleep -Seconds 3
-
-            irm "https://raw.githubusercontent.com/BuzzedHoney/Manuka/main/Manuka/PowerShell/Privacy.ps1" | iex
-
-            Start-Sleep -Seconds 3
             
             Write-Host "All Optimizations Complete"
             
