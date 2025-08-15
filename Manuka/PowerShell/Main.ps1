@@ -56,6 +56,7 @@ while ($true) {
             }
 
             irm "https://raw.githubusercontent.com/BuzzedHoney/Manuka/main/Manuka/PowerShell/Debloat.ps1" | iex
+			
             Start-Sleep 3
 
             New-Item -ItemType Directory -Force -Path "$env:LOCALAPPDATA\Temp\Win11Debloat" | Out-Null
@@ -82,12 +83,16 @@ while ($true) {
                 -DisableMouseAcceleration
 
             Start-Sleep 3
-			
+
+			irm "https://raw.githubusercontent.com/BuzzedHoney/Manuka/main/Manuka/PowerShell/AdditionalTweaks.ps1" | iex
+   
             irm "https://raw.githubusercontent.com/BuzzedHoney/Manuka/main/Manuka/PowerShell/Security.ps1" | iex
    
 	        Get-Process PowerShell | Stop-Process -Force
+		 
         }
     }
+	
     while (-not $readerErr.EndOfStream) {
         $errLine = $readerErr.ReadLine()
         Write-Output $errLine
