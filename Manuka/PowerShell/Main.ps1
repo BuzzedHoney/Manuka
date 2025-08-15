@@ -93,14 +93,11 @@ while ($true) {
             Start-Sleep 3
 			
             irm "https://raw.githubusercontent.com/BuzzedHoney/Manuka/main/Manuka/PowerShell/AdditionalTweaks.ps1" | iex
-   
             irm "https://raw.githubusercontent.com/BuzzedHoney/Manuka/main/Manuka/PowerShell/Security.ps1" | iex
    
             Get-Process PowerShell | Stop-Process -Force
-		 
         }
     }
-	
     while (-not $readerErr.EndOfStream) {
         $errLine = $readerErr.ReadLine()
         Write-Output $errLine
