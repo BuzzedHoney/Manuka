@@ -12,7 +12,7 @@ Manuka is a streamlined Windows debloater designed with simplicity in mind, offe
 ### Security
 - Enhances built in Windows defenses by enabling and configuring Windows Defender and Firewall for maximum real time protection and network security against the latest collection of malware, exploits, and network threats.
 ### Privacy
-- Stops Microsoft’s surveillance by disabling Telemetry, Recall, Copilot, ads, web suggestions, and other invasive features. A wide range of known tracking domains are blocked at the firewall level, and services tied to Bing, Edge, and Microsoft analytics are blocked.
+- Stops Microsoft’s surveillance by disabling Telemetry, Recall, Copilot, ads, web suggestions, and other invasive features.
 
 # Installation
 The installation process is very simple. Download the latest version of Manuka via the 'Releases' tab on the right hand side of the page. Once downloaded, open the app, and all the system tweaks will be applied automatically.
