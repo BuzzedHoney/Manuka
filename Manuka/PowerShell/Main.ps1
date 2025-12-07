@@ -71,6 +71,7 @@ while ($true) {
 
             & ([scriptblock]::Create((irm "https://debloat.raphi.re/"))) `
                 -Silent `
+				-NoRestartExplorer `
                 -RemoveAppsCustom `
                 -DisableTelemetry `
                 -DisableSettings365Ads `
@@ -83,6 +84,7 @@ while ($true) {
 				-DisableClickToDo `
                 -DisableRecall `
                 -DisableDVR `
+				-DisableGameBarIntegration `
                 -DisableSuggestions `
                 -DisableLockscreenTips `
                 -DisableDesktopSpotlight `
