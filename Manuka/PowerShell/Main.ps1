@@ -74,13 +74,13 @@ while ($true) {
                 -RemoveAppsCustom `
                 -DisableTelemetry `
                 -DisableSettings365Ads `
-				-DisableEdgeAds `
+                -DisableEdgeAds `
                 -DisableBing `
                 -DisableCopilot `
                 -DisableNotepadAI `
                 -DisablePaintAI `
-				-DisableEdgeAI `
-				-DisableClickToDo `
+                -DisableEdgeAI `
+                -DisableClickToDo `
                 -DisableRecall `
                 -DisableDVR `
                 -DisableSuggestions `
