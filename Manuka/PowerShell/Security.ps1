@@ -1,22 +1,9 @@
 Write-Host "Updating Windows Defender"
 Set-MpPreference -PlatformUpdatesChannel Beta
 Update-MpSignature
-Write-Host "Configuring Windows Defender"
-Set-MpPreference `
-  -DisableRealtimeMonitoring $false `
-  -DisableBehaviorMonitoring $false `
-  -DisableIOAVProtection $false `
-  -DisableScriptScanning $false `
-  -MAPSReporting Advanced `
-  -SubmitSamplesConsent AlwaysPrompt `
-  -PUAProtection Enabled `
-  -EnableControlledFolderAccess Enabled `
-  -EnableNetworkProtection Enabled `
-  -NetworkProtectionReputationMode 2 `
-  -EnableDnsSinkhole $true `
-  -DisableNetworkProtectionPerfTelemetry $true `
-  -CloudBlockLevel ZeroTolerance `
-  -CloudExtendedTimeout 60
+Write-Host "I removed the antivirus settings, I'll fix it later."
+Start-Sleep 5
+
 
 Write-Host "Configuring Exploit Protection"
 $current = (Get-ProcessMitigation -System).System.MitigationOptions
