@@ -1,21 +1,25 @@
 {
   "WPFTweaks": [
-    "WPFTweaksServices",
-    "WPFTweaksTele",
+    "WPFTweaksDisableExplorerAutoDiscovery",
+    "WPFTweaksXboxRemoval",
+    "WPFTweaksWidget",
+    "WPFTweaksEdgeDebloat",
+    "WPFTweaksStorage",
+    "WPFTweaksDisableFSO",
+    "WPFTweaksDisplay",
+    "WPFTweaksConsumerFeatures",
+    "WPFTweaksRemoveEdge",
+    "WPFTweaksActivity",
+    "WPFTweaksTelemetry",
+    "WPFTweaksDisableBGapps",
+    "WPFTweaksDiskCleanup",
     "WPFTweaksPowershell7Tele",
     "WPFTweaksHiber",
-    "WPFTweaksDisableExplorerAutoDiscovery",
-    "WPFTweaksRecallOff",
-    "WPFTweaksDisableBGapps",
-    "WPFTweaksWifi",
-    "WPFTweaksDVR",
-    "WPFTweaksDisableWpbtExecution",
     "WPFTweaksDeleteTempFiles",
-    "WPFTweaksDisableLMS1",
-    "WPFTweaksConsumerFeatures",
-    "WPFTweaksHome",
     "WPFTweaksRemoveCopilot",
-    "WPFTweaksLoc",
-    "WPFTweaksAH"
+    "WPFTweaksRemoveOneDrive",
+    "WPFTweaksWPBT",
+    "WPFTweaksServices",
+    "WPFTweaksLocation"
   ] 
 }
