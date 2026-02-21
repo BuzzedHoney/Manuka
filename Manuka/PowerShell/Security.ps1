@@ -15,3 +15,5 @@ Set-NetFirewallProfile -Profile Domain,Private,Public -Enabled True
 Get-NetConnectionProfile | Where-Object {$_.NetworkCategory -ne 'Public'} | ForEach-Object { Set-NetConnectionProfile -InterfaceIndex $_.InterfaceIndex -NetworkCategory Public }
 
 Write-Host "Security Tweaks Completed"
+
+# DEPRICATED
