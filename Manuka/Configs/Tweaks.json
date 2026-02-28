@@ -1,28 +1,20 @@
-{
-  "Install": [],
-  "WPFInstall": [],
-  "WPFFeature": [],
-  "WPFTweaks": [
-    "WPFTweaksDisableExplorerAutoDiscovery",
-    "WPFTweaksXboxRemoval",
-    "WPFTweaksWidget",
-    "WPFTweaksEdgeDebloat",
-    "WPFTweaksStorage",
-    "WPFTweaksDisableFSO",
-    "WPFTweaksDisplay",
-    "WPFTweaksConsumerFeatures",
-    "WPFTweaksRemoveEdge",
-    "WPFTweaksActivity",
-    "WPFTweaksTelemetry",
-    "WPFTweaksDisableBGapps",
-    "WPFTweaksDiskCleanup",
-    "WPFTweaksPowershell7Tele",
-    "WPFTweaksHiber",
-    "WPFTweaksDeleteTempFiles",
-    "WPFTweaksRemoveCopilot",
-    "WPFTweaksRemoveOneDrive",
-    "WPFTweaksWPBT",
-    "WPFTweaksServices",
-    "WPFTweaksLocation"
-  ]
-}
+[
+  "WPFTweaksDeleteTempFiles",
+  "WPFTweaksActivity",
+  "WPFTweaksConsumerFeatures",
+  "WPFTweaksDisableExplorerAutoDiscovery",
+  "WPFTweaksHiber",
+  "WPFTweaksLocation",
+  "WPFTweaksPowershell7Tele",
+  "WPFTweaksTelemetry",
+  "WPFTweaksWPBT",
+  "WPFTweaksWidget",
+  "WPFTweaksDiskCleanup",
+  "WPFTweaksServices",
+  "WPFTweaksDisableBGapps",
+  "WPFTweaksDisableFSO",
+  "WPFTweaksRemoveCopilot",
+  "WPFTweaksXboxRemoval",
+  "WPFTweaksRemoveOneDrive",
+  "WPFTweaksRemoveEdge"
+]
