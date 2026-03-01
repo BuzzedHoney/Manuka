@@ -101,6 +101,8 @@ while ($true) {
 				-DisableStartRecommended `
 				-ShowKnownFileExt `
 				-DisableWidgets `
+				-DisableSettingsHome `
+				-DisableDragTray `
 				# Other
                 -DisableFastStartup `
                 -DisableStickyKeys `
