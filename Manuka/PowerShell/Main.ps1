@@ -72,21 +72,36 @@ while ($true) {
             & ([scriptblock]::Create((irm "https://debloat.raphi.re/"))) `
                 -Silent `
                 -RemoveAppsCustom `
+
+				# Privacy
                 -DisableTelemetry `
+				-DisableLocationServices `
+				-DisableSearchHistory `
+                -DisableSuggestions `
+                -DisableLockscreenTips `
+                -DisableDesktopSpotlight `
                 -DisableSettings365Ads `
                 -DisableEdgeAds `
-                -DisableBing `
+				# AI
                 -DisableCopilot `
                 -DisableNotepadAI `
                 -DisablePaintAI `
                 -DisableEdgeAI `
                 -DisableClickToDo `
                 -DisableRecall `
+				# Updates
+				-DisableDeliveryOptimization `
+				-DisableUpdateASAP `
+				-PreventUpdateAutoReboot `
+				# Gaming
                 -DisableDVR `
-                -DisableSuggestions `
-                -DisableLockscreenTips `
-                -DisableDesktopSpotlight `
-                -DisableWidgets `
+				# UI
+				-DisableBing `
+				-DisableStartPhoneLink `
+				-DisableStartRecommended `
+				-ShowKnownFileExt `
+				-DisableWidgets `
+				# Other
                 -DisableFastStartup `
                 -DisableStickyKeys `
                 -DisableMouseAcceleration
